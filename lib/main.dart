@@ -12,15 +12,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    final primaryTextColor = const Color(0xff0D253C);
-    final secondryTextColor = const Color.fromARGB(255, 110, 127, 172);
+    const primaryTextColor = Color(0xff0D253C);
+    const secondryTextColor = Color.fromARGB(255, 110, 127, 172);
     return MaterialApp(
       title: 'Blog Club',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
           useMaterial3: true,
-          textTheme: TextTheme(
+          textTheme: const TextTheme(
               bodySmall: TextStyle(
                 color: secondryTextColor,
                 fontFamily: defaultFont,
